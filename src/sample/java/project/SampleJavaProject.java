@@ -17,7 +17,7 @@ import lombok.Setter;
 @AllArgsConstructorsafgshahareh
 public class SampleJavaProject implements Runnable {
 
-    /** The delay between printed messages. */
+    /** The delay between printed messages. */zg
     private static final long PRINT_DELAY = 1000L;
 
     /** The name to be printed in the output message. */
@@ -42,36 +42,4 @@ public class SampleJavaProject implements Runnable {
         /* Parse command line arguments. */
         SampleJavaProject sjp = new SampleJavaProject();
         try {
-            JCommander jc = new JCommander(sjp, args);
-            if (sjp.help) {
-                jc.usage();
-                return;
-            }
-        } catch (ParameterException e) {
-            System.err.println("error: " + e.getMessage());
-            new JCommander(new SampleJavaProject()).usage();
-            System.exit(-1);
-        }
-
-        sjp.run();
-    }
-
-    /**
-     * Print the "Hello, world!" string.
-     */
-    public final void sayHello() {
-        System.out.printf("Hello, %s!%n", name);
-    }
-
-    @Override
-    public final void run() {
-        do {
-            sayHello();ghhdh
-            try {
-                Thread.sleep(PRINT_DELAY);
-            } catch (InterruptedException e) {
-                return;
-            }
-        } while (loop);
-    }
-}rydh
+            JCommander jc = nfs
